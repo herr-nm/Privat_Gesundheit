@@ -1,61 +1,48 @@
-# Gesundheits-Tracker
+# Gesundheitstracker (Activity & Weight Tracker)
 
-Ein minimalistischer, webbasierter Gesundheits-Tracker zur Protokollierung von Körpergewicht und sportlichen Aktivitäten. Das Projekt nutzt PHP für das Backend, Chart.js für die Visualisierung und speichert alle Daten lokal in einer JSON-Datei – keine Datenbank (SQL) erforderlich.
+Ein leichtgewichtiger, PHP-basierter Tracker zur Dokumentation von Körpergewicht und sportlichen Aktivitäten. Die Daten werden ohne Datenbank direkt in einer `data.json` gespeichert, was das Skript extrem portabel und einfach zu installieren macht.
 
-## 🚀 Features
+## Screenshots
 
-  - **Gewichtstracking:** Erfassung des täglichen Gewichts.
-  - **Aktivitätsprotokoll:** Auswahl verschiedener Sportdisziplinen inklusive Intensitätsstufen.
-  - **"Kein Sport"-Option:** Spezielle Logik zur Handhabung von Ruhetagen (Intensität wird automatisch auf 0 gesetzt).
-  - **Datenvisualisierung:** Ein interaktives Liniendiagramm zeigt den Gewichtsverlauf über die Zeit.
-  - **Datenhaltung:** Speicherung erfolgt in der `health_data.json`, was Backups und manuelle Bearbeitung extrem einfach macht.
-  - **Responsive Design:** Optimierte Ansicht für Desktop und mobile Endgeräte.
-  - **Löschfunktion:** Einträge können direkt über die Tabelle entfernt werden.
+![Screenshot](screenshot.png)
 
-## 🛠️ Installation & Setup
+## Features
 
-1.  **Voraussetzungen:**
+*   **Aktivitätserfassung:** Protokollierung von Sportarten (Spinning Bike, Laufen, Klettern, Wandern, Schießsport) inkl. Intensitätsstufen (1–5).
+*   **Gewichtstracking:** Einfache Eingabe des täglichen Gewichts mit Verlaufskontrolle.
+*   **Visualisierungen:**
+    *   **Activity Heatmap:** Eine 365-Tage-Übersicht deiner sportlichen Aktivitäten (inspiriert vom GitHub-Beitragsgraph).
+    *   **Gewichtskurve:** Ein interaktives Liniendiagramm (Chart.js), das Gewichtsschwankungen über das Jahr verdeutlicht.
+*   **Datenverwaltung:** Datensätze können direkt in der Tabelle bearbeitet (Bleistift-Icon) oder gelöscht (Papierkorb-Icon) werden.
+*   **Responsive Design:** Optimiert für Desktop und mobile Endgeräte.
 
-      - Ein Webserver mit PHP-Unterstützung (z. B. Apache mit XAMPP, Nginx oder ein Webhosting-Paket).
-      - Schreibrechte im Projektordner (damit die `health_data.json` erstellt/beschrieben werden kann).
+## Installation
 
-2.  **Dateien kopieren:**
-    Lade die Dateien `health.php` und `health_data.json` auf deinen Server hoch.
+1.  Lade die `index.php` (oder den Namen deiner Datei) auf einen PHP-fähigen Webserver hoch.
+2.  Stelle sicher, dass das Verzeichnis beschreibbar ist, damit das Skript die `data.json` erstellen kann.
+3.  Falls du ein Logo verwenden möchtest, hinterlege eine `logo.png` im selben Verzeichnis.
 
-3.  **Berechtigungen:**
-    Stelle sicher, dass der Webserver Schreibzugriff auf die `health_data.json` hat:
+## Projektstruktur & Navigation
 
-    ```bash
-    chmod 664 health_data.json
-    ```
+*   **Zentrales Dashboard:** Über den Button "Dashboard" im Header gelangst du zur übergeordneten Seite. Das Skript geht davon aus, dass sich diese Datei (`index.php`) genau einen Ordner über dem Tracker-Verzeichnis befindet.
+*   **Datenquelle:** Alle Einträge werden in der Datei `data.json` im selben Verzeichnis wie das Skript gespeichert.
 
-4.  **Aufrufen:**
-    Öffne die `health.php` in deinem Browser (z. B. `http://localhost/health.php`).
+## Beispiel-Datensätze
 
-## 📊 Dateistruktur
+Um die Funktionen (Heatmap und Diagramm) sofort testen zu können, wird empfohlen, eine `data.json` mit Beispieldaten zu nutzen. Eine solche Datei mit 20 Test-Einträgen (Gewichtsschwankungen und verschiedene Aktivitäten) wurde generiert und kann direkt in den Ordner kopiert werden, um die Visualisierungen sofort sichtbar zu machen.
 
-  - `health.php`: Die Hauptanwendung (Logik, UI und Diagramm).
-  - `health_data.json`: Die Datenbank im JSON-Format.
-  - `README.md`: Diese Dokumentation.
-  - `LICENSE`: Das Projekt steht unter der **GNU Affero General Public License v3 (AGPL-3.0)**.
+## Technologien
 
-## 🖥️ Technologien
+*   **Backend:** PHP (Dateibasierte Speicherung)
+*   **Frontend:** HTML5, CSS3 (Flexbox/Grid)
+*   **Libraries:** 
+    *   [Chart.js](https://www.chartjs.org/) für die Diagramme.
+    *   [Font Awesome](https://fontawesome.com/) für die Icons.
 
-  - **Backend:** PHP
-  - **Frontend:** HTML5, CSS3 (GitHub-Style UI)
-  - **Charts:** [Chart.js](https://www.chartjs.org/)
-  - **Datenformat:** JSON
+## Lizenz
 
-## 📝 Nutzungshinweise
+Dieses Projekt ist unter der **GNU AGPL-3.0** lizenziert. Weitere Details findest du im GitHub-Repository.
 
-  - **Datum:** Standardmäßig wird das aktuelle Datum vorgeschlagen, kann aber für Nachträge geändert werden.
-  - **Sport:** Wählst du "Kein Sport", wird das Feld für die Intensität ignoriert.
-  - **Sortierung:** Die Daten werden automatisch nach Datum sortiert in der JSON-Datei gespeichert.
+---
 
-## 📄 Lizenz
-
-Dieses Projekt ist lizenziert unter der GNU Affero General Public License v3.0 - siehe die [LICENSE](https://www.google.com/search?q=LICENSE) Datei für Details. Erstellt durch Herr-NM.
-
------
-
-*Erstellt für die private Gesundheitsverfolgung.*
+**Source:** [herr-nm/Privat_Gesundheit](https://github.com/herr-nm/Privat_Gesundheit)

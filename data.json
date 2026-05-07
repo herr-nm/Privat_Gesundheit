@@ -1,0 +1,102 @@
+{
+  "2026-04-18": {
+    "weight": 85.5,
+    "discipline": "Laufen",
+    "intensity": 3
+  },
+  "2026-04-19": {
+    "weight": 85.2,
+    "discipline": "Kein Sport",
+    "intensity": 0
+  },
+  "2026-04-20": {
+    "weight": 85.3,
+    "discipline": "Spinning Bike",
+    "intensity": 4
+  },
+  "2026-04-21": {
+    "weight": 84.9,
+    "discipline": "Wandern",
+    "intensity": 2
+  },
+  "2026-04-22": {
+    "weight": 84.8,
+    "discipline": "Klettern",
+    "intensity": 5
+  },
+  "2026-04-23": {
+    "weight": 85.0,
+    "discipline": "Kein Sport",
+    "intensity": 0
+  },
+  "2026-04-24": {
+    "weight": 84.7,
+    "discipline": "Schießsport",
+    "intensity": 1
+  },
+  "2026-04-25": {
+    "weight": 84.5,
+    "discipline": "Laufen",
+    "intensity": 4
+  },
+  "2026-04-26": {
+    "weight": 84.6,
+    "discipline": "Kein Sport",
+    "intensity": 0
+  },
+  "2026-04-27": {
+    "weight": 84.4,
+    "discipline": "Spinning Bike",
+    "intensity": 3
+  },
+  "2026-04-28": {
+    "weight": 84.2,
+    "discipline": "Klettern",
+    "intensity": 4
+  },
+  "2026-04-29": {
+    "weight": 84.1,
+    "discipline": "Kein Sport",
+    "intensity": 0
+  },
+  "2026-04-30": {
+    "weight": 84.3,
+    "discipline": "Wandern",
+    "intensity": 3
+  },
+  "2026-05-01": {
+    "weight": 83.9,
+    "discipline": "Laufen",
+    "intensity": 5
+  },
+  "2026-05-02": {
+    "weight": 83.8,
+    "discipline": "Schießsport",
+    "intensity": 2
+  },
+  "2026-05-03": {
+    "weight": 84.0,
+    "discipline": "Kein Sport",
+    "intensity": 0
+  },
+  "2026-05-04": {
+    "weight": 83.7,
+    "discipline": "Spinning Bike",
+    "intensity": 4
+  },
+  "2026-05-05": {
+    "weight": 83.5,
+    "discipline": "Klettern",
+    "intensity": 3
+  },
+  "2026-05-06": {
+    "weight": 83.4,
+    "discipline": "Laufen",
+    "intensity": 4
+  },
+  "2026-05-07": {
+    "weight": 83.2,
+    "discipline": "Wandern",
+    "intensity": 2
+  }
+}
